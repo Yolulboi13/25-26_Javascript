@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Intro</title>
+</head>
+<body>
+<p id="demo" onclick="styleText()">You need to remember absolutely everything you ever do brotato chip.</p>
+
+<button id="cool" onclick="whereTFTheFunction()">Click me to do something cool.</button>
+
+<script>
+    alert("What's up cuh")
+    /*
+    Multi-line comments
+    are very cool
+     */
+    //Single-line comments are also pretty cool
+
+    // Basic Click Function
+    function whereTFTheFunction(){
+        document.getElementById("demo").style.fontSize = "35px";
+    }
+    function styleText(){
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").innerHTML = "You shouldn't have done that you sonnabih"
+    }
+</script>
+
+</body>
+</html>
