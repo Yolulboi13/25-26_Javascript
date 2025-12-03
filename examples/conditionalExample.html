@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Example - Conditionals</title>
+</head>
+<body>
+
+<form action="#" method="post">
+    <label for="pwd">New Password</label>
+    <input type="password" id="pwd" name="pwd" onkeydown="checkLength()">
+    <div id="len"></div>
+    <br><br>
+    <label for="pwd2">Confirm Password</label>
+    <input type="password" id="pwd2" name="pwd2" onchange="match()">
+    <div id="eval"></div>
+</form>
+
+<script>
+    //Check length of the first password
+    function checkLength(){
+        len = document.getElementById("pwd").value.length;
+        //Min length 8
+        if((len+1)<8){
+            document.getElementById("len").innerHTML ="<font color='red'>Password must be at least 8 characters long.</font>";
+        } else{
+            document.getElementById("len").innerHTML = "<font color='green'>Password is strong.</font>";
+        }
+    }
+    function match(){
+        p1 = document.getElementById("pwd").value;
+        p2 = document.getElementById("pwd2").value;
+        if(p1===p2){
+            document.getElementById("eval").innerHTML = "<font color='green'>The passwords match.</font>";
+        } else{
+            document.getElementById('eval').innerHTML = "<font color='red'>The passwords do not match.</font>";
+        }
+    }
+</script>
+
+</body>
+</html>
