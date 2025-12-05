@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Challenges - 1</title>
+</head>
+<body>
+<div id="goodbye">
+    <p>Oh, hey! This is some pretty text!</p>
+</div>
+<button style="background-color: cornflowerblue; color: white" onclick="disappear()">I CAST DISAPPEAR</button>
+<button style="background-color: lightcoral; color: white" onclick="reappear()">I CAST REAPPEAR</button>
+
+<script>
+    function disappear(){
+        document.getElementById("goodbye").style.visibility="hidden";
+    }
+    function reappear(){
+        document.getElementById("goodbye").style.visibility="visible";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Labs - Palindrome Generator</title>
+</head>
+<body>
+
+<!--
+1 - Make a text box and a button. The textbox will be the string you aim to test. The button activates the function.
+2 - Write the function that reads the string in the textbox and reverses it. If it's congruent to the parent string, return True. Otherwise, return False.
+3 - Make the result come up on screen. Green if yes, red if no.
+
+Words to test: mom, the, Racecar, Journal
+
+-->
+
+<input type="text" id="parentString" placeholder="Enter the word to test"><br>
+<button style="background-color: dodgerblue; color: white" onclick="reverse()">Palindrome?</button><br><br>
+<div id="result">The result will go here when you click that button</div>
+
+
+<script>
+    function reverse(){
+        length = document.getElementById("parentString").value.length;
+        middle = length/2;
+        if(middle % 2 === 1){
+
+        }
+
+
+        palindrome()
+    }
+    function palindrome(){
+        parent = document.getElementById("parentString").value;
+    }
+</script>
+</body>
+</html>

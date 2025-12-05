@@ -22,18 +22,18 @@
         len = document.getElementById("pwd").value.length;
         //Min length 8
         if((len+1)<8){
-            document.getElementById("len").innerHTML ="<font color='red'>Password must be at least 8 characters long.</font>";
+            document.getElementById("len").innerHTML="<font color='red'>Password must be at least 8 characters long.</font>";
         } else{
-            document.getElementById("len").innerHTML = "<font color='green'>Password is strong.</font>";
+            document.getElementById("len").innerHTML="<font color='green'>Password is strong.</font>";
         }
     }
     function match(){
         p1 = document.getElementById("pwd").value;
         p2 = document.getElementById("pwd2").value;
         if(p1===p2){
-            document.getElementById("eval").innerHTML = "<font color='green'>The passwords match.</font>";
+            document.getElementById("eval").innerHTML="<font color='green'>The passwords match.</font>";
         } else{
-            document.getElementById('eval').innerHTML = "<font color='red'>The passwords do not match.</font>";
+            document.getElementById('eval').innerHTML="<font color='red'>The passwords do not match.</font>";
         }
     }
 </script>
