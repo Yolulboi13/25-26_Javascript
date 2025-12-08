@@ -22,17 +22,32 @@ Words to test: mom, the, Racecar, Journal
 
 <script>
     function reverse(){
+        string = document.getElementById("parentString").value;
         length = document.getElementById("parentString").value.length;
-        middle = length/2;
-        if(middle % 2 === 1){
-
+        for(x=0;x<(length-x);x++){
+            string = swapIndex(string, x, length-x-1)
         }
-
-
-        palindrome()
+        flip = string
+        palindrome(flip)
     }
-    function palindrome(){
+
+    function swapIndex(str, index1, index2){
+        if(index1 === index2){
+            return str;
+        }
+        let strArray = str.split("");
+        [strArray[index1], strArray[index2]] = [strArray[index2], strArray[index1]];
+        return strArray.join("");
+    }
+
+    function palindrome(child){
         parent = document.getElementById("parentString").value;
+        child = flip
+        if(parent===child){
+            document.getElementById("result").innerHTML="<font color='green'>This is a palindrome!!</font>";
+        } else{
+            document.getElementById("result").innerHTML="<font color='red'>This isn't a palindrome!!</font>";
+        }
     }
 </script>
 </body>
